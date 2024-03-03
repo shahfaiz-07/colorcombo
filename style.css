@@ -1,3 +1,48 @@
+@font-face {
+    font-family: 'ds digital';
+    src: url('Fonts/dsdigital-webfont.woff2') format('woff2'),
+         url('Fonts/dsdigital-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'neue haas';
+    src: url('Fonts/neuehaas-webfont.woff2') format('woff2'),
+         url('Fonts/neuehaas-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'ogg';
+    src: url('Fonts/ogg-webfont.woff2') format('woff2'),
+         url('Fonts/ogg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'scto grotesk';
+    src: url('Fonts/sctogrotesk-webfont.woff2') format('woff2'),
+         url('Fonts/sctogrotesk-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 * {
    margin:0;
    padding:0;
@@ -5,7 +50,162 @@
 }
 
 html, body {
+    font-size:1.25vw;
    width:100%;
    height: 100%;
 }
 
+.main {
+    width: 100%;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.home>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150vw;
+    height: 150vw;
+    transform-origin: center;
+    border-radius: 50%;
+}
+
+.top {
+    position: absolute;
+    width:100%;
+    height: 100%;
+    rotate: 180deg;
+}
+
+.main-circle img {
+    position: absolute;
+    width: 100%;
+}
+
+#top-circle-2 {
+    scale: 0.7;
+}
+
+#top-circle-3 {
+    scale: 0.5;
+}
+
+.bottom {
+    position: absolute;
+    width:100%;
+    height: 100%;
+}
+
+#btm-circle-2 {
+    scale:0.7;
+}
+
+#btm-circle-3 {
+    scale: 0.5;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vw;
+    height: 50vw;
+    /* scale: 9; */
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+.home-nav {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    z-index: 1;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3.5rem;
+}
+
+.left-nav h1 {
+    font-family: 'neue haas', sans-serif;
+    font-size: 1rem;
+}
+
+.right-nav {
+    text-align: center;
+    font-family: 'ds digital';
+
+    /* font-weight:; */
+}
+
+.right-nav h1 {
+    font-weight: 400;
+    font-size: .7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: .4rem;
+}
+
+.right-nav .color-palette{
+    /* width: 5rem;
+    height: 1rem; */
+    /* background-color: green; */
+    display: flex;
+    /* text-align: center; */
+}
+
+.colors {
+    height: .7rem;
+    width: .65rem;
+    /* border-radius: 50%; */
+    /* border:1px solid red; */
+}
+
+#c1 {
+    background-color: #0000001e;
+}
+
+#c2 {
+    background-color: #00000038;
+}
+
+#c3 {
+    background-color: #0000006b;
+}
+
+#c4 {
+    background-color: #000000aa;
+}
+
+#c5 {
+    background-color: #000000d6;
+}
+
+#c6 {
+    background-color: #000;
+}
