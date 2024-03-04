@@ -241,7 +241,7 @@ function SecondAnimations() {
       scrub: 2,
       delay: 1,
       // duration: 1,
-      end: "+=4000",
+      end: "+=6000",
       // markers: true,
       pin: true,
     },
@@ -417,7 +417,7 @@ function SecondAnimations() {
         height: "0rem",
         duration: 2,
         ease: Power0,
-        delay: -2,
+        delay: -2.5,
       },
       "anim5"
     )
