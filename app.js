@@ -40,7 +40,7 @@ function HomeAnimations() {
     },
   });
 
-  tl.from(".center-img-sec img", {
+  tl.from(".center-img-sec", {
     x: "150%",
     duration: 1,
     ease: Power0,
