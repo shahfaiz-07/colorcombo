@@ -1,13 +1,8 @@
-// the element triggered stays at it's position with pin - true
-// elements with same 'flag' value in a timeline animate together - can be any value
-//use end = "+=____" to inc/dec animation speed, it specifies when to end the animation based on the position of scroller 
-
 const homeAside = document.getElementById("home-aside");
 const homeTarget = document.getElementById("home-target");
 const homeEffect = document.getElementById("home-effect");
 const homeBg = document.getElementById("home-cover");
 const targetHidden = document.querySelectorAll(".target-hidden");
-// let initialScale = 1;
 
 homeAside.addEventListener("mouseenter", () => {
   homeBg.style.transform = 'scale(1.1)';
@@ -33,9 +28,7 @@ function HomeAnimations() {
       trigger: ".home",
       start: "top top",
       scrub: 2,
-      // duration: 1,
       end: "+=6000",
-      // markers: true,
       pin: true,
     },
   });
@@ -227,7 +220,6 @@ function HomeAnimations() {
         y: "-27rem",
         duration: 2,
         ease: Expo.easeIn,
-        // delay: .5,
       },
       "anim3"
     );
@@ -240,9 +232,7 @@ function SecondAnimations() {
       start: "top top",
       scrub: 2,
       delay: 1,
-      // duration: 1,
       end: "+=6000",
-      // markers: true,
       pin: true,
     },
   });
@@ -388,7 +378,6 @@ function SecondAnimations() {
         x: "-100%",
         duration: 4,
         ease: Power0,
-        // delay: -1,
       },
       "anim4"
     )
